@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+.my-navigationBar {
+    background-color: coral;
+}
+
+.my-container {
+    position: relative;
+    top: 50px;
+}
+
+.my-container-feed {
+    position: relative;
+    top: 50px;
+    width: fit-content;
+    height: 5vh;
+}
+
+.activities {
+    position: relative;
+    height: auto;
+    padding: 5px;
+}
+
+.dashboard {
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.my-row {
+    position: relative;
+    /*padding: 5px;*/
+    /*border: 2px solid black;*/
+    height: auto;
+    /*background-color: #1c7430;*/
+}
+
+.my-col {
+    padding-right: 5px;
+    background-color: #9fcdff;
+    min-height: 120px;
+    border: 2px solid black;
+}
+
+.my-col-activities {
+    /*padding-right: 5px;*/
+    background-color: #DDE5E4;
+    min-height: 120px;
+    border: 2px solid black;
+}
+
+.my-col-activities2 {
+    /*padding-right: 5px;*/
+    background-color: #CCE7E4;
+    min-height: 120px;
+    border: 2px solid black;
+}
+
+.pocetkm {
+    position: relative;
+    left: 50%;
+    top: 20%;
+    width: fit-content;
+    /*transform: translate(-50%);*/
+}
+

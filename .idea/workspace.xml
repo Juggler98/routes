@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/.idea/Tracking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1200px-Geocaching.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Screenshot_20201018-191034.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Snímka.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/running-man-hi.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1j3FfiuLElOTPFSDQ0tfvjBgP4b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="" />
+      <created>1603024974039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603024974039</updated>
+      <workItem from="1603024975184" duration="1207000" />
+      <workItem from="1603026883479" duration="850000" />
+      <workItem from="1603027761153" duration="396000" />
+      <workItem from="1603028188208" duration="8645000" />
+      <workItem from="1603037523569" duration="4649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603030272499">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603030272499" />
+    <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1603030562331">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603030562331" />
+    <state x="2629" y="295" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603027726484" />
+    <state x="175" y="62" key="SettingsEditor" timestamp="1603043393640">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
+    <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603044037818">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603044037818" />
+  </component>
+</project>
