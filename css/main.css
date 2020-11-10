@@ -29,6 +29,83 @@ body{
     padding-top: 5px;
 }
 
+.text-muted {
+    font-size: 10px;
+
+}
+
+.map {
+    height: 250px;
+    /* The height is 400 pixels */
+    width: auto;
+    /* The width is the width of the web page */
+}
+
+.activitymap {
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    width: auto;
+
+}
+
+.table-striped {
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;*/
+    position: center;
+    max-width: 80vw;
+    /*display: flex;*/
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.btn-group  {
+    /*position: relative;*/
+    /*transform: translate(150%);*/
+    float: right !important;
+}
+
+.jumbotron-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transform: translate(+0px,+15px);*/
+    /*padding: 20px;*/
+    padding-top: 2rem;
+}
+
+.py-5 {
+    padding-top: 2rem !important;
+}
+/*#map {*/
+/*    height: 200px;*/
+/*    !* The height is 400 pixels *!*/
+/*    width: auto;*/
+/*    !* The width is the width of the web page *!*/
+/*}*/
+
+.stats{
+    /*border-top:1px solid #ebeff2;*/
+    /*background:#f7f8fa;*/
+    overflow:auto;
+    padding:15px 0;
+    font-size:12px;
+    /*color:#59687f;*/
+    /*font-weight:600;*/
+    /*border-radius: 0 0 0 5px;*/
+}
+
+.stats div{
+    border-right:1px solid #ebeff2;
+    width: 33.33333%;
+    float:left;
+    text-align:center
+}
+
+.stats div:nth-of-type(3){border:none;}
+
 .my-row {
     position: relative;
     /*padding: 5px;*/
@@ -43,6 +120,13 @@ body{
     min-height: 120px;
     border: 2px solid black;
 }
+
+/*#map {*/
+
+/*    height: 400px;*/
+/*    !* The height is 400 pixels *!*/
+/*    width: 100%;*/
+/*}*/
 
 .my-col-activities {
     /*padding-right: 5px;*/
@@ -66,3 +150,57 @@ body{
     /*transform: translate(-50%);*/
 }
 
+.list-group {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.page-title {
+    font-weight: 300;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /*border: 1px solid #0073ff;*/
+    right: 0px;
+    /*padding-left: 2rem;*/
+}
+
+.page-title-calendar {
+    font-weight: 300;
+    position: relative;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*text-align: center !important;*/
+    padding-top: 2rem;
+    /*padding-bottom: 2rem;*/
+    float: left;
+    /*border: 1px solid red;*/
+    padding-right: 5vh;
+}
+
+.odsadenie {
+    padding-bottom: 2rem;
+}
+
+.btn-ath {
+    position: relative;
+    float: right;
+    /*height: 2rem;*/
+}
+
+.stats-table {
+    max-width: 50vw;
+}
+
+.list-width {
+    max-width: 55vw;
+}
+
+.stats-table .table-title {
+    border: black;
+}
