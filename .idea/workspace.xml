@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/Tracking.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/1200px-Geocaching.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Screenshot_20201018-191034.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Snímka.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/running-man-hi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activities2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/album.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/stiahnuť.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tracking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -52,10 +70,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/FRIčka/5. semester/VAII/php_mysql/www/Tracking" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking" />
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\img" />
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\css" />
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,12 +98,43 @@
       <workItem from="1603026883479" duration="850000" />
       <workItem from="1603027761153" duration="396000" />
       <workItem from="1603028188208" duration="8645000" />
-      <workItem from="1603037523569" duration="4649000" />
+      <workItem from="1603037523569" duration="5507000" />
+      <workItem from="1603103793776" duration="9000" />
+      <workItem from="1603354030921" duration="3000" />
+      <workItem from="1603435033209" duration="6000" />
+      <workItem from="1603549588109" duration="104000" />
+      <workItem from="1603699121851" duration="1380000" />
+      <workItem from="1603807619783" duration="6000" />
+      <workItem from="1604005406132" duration="42000" />
+      <workItem from="1604058948559" duration="692000" />
+      <workItem from="1604779036644" duration="15503000" />
+      <workItem from="1604833670604" duration="1020000" />
+      <workItem from="1604834745614" duration="54000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1603044663879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603044663879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
@@ -85,19 +145,27 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603030272499" />
-    <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1603030562331">
-      <screen x="0" y="0" width="1450" height="864" />
+    <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604834774793">
+      <screen x="1920" y="0" width="1858" height="1080" />
     </state>
-    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603030562331" />
-    <state x="2629" y="295" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603027726484" />
+    <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604834774793" />
+    <state x="2629" y="295" key="FileChooserDialogImpl" timestamp="1604834798344">
+      <screen x="1920" y="0" width="1858" height="1080" />
+    </state>
+    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1604063756596" />
+    <state x="2629" y="295" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604834798344" />
+    <state x="2683" y="463" key="NewPhpFileDialog" timestamp="1604834605845">
+      <screen x="1920" y="0" width="1858" height="1080" />
+    </state>
+    <state x="2683" y="463" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604834605845" />
     <state x="175" y="62" key="SettingsEditor" timestamp="1603043393640">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603044037818">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603045389818">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603044037818" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603045389818" />
   </component>
 </project>
