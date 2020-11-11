@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="A lot of changes.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11__11__2020_11_56__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11__11__2020_11_56__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0008_y09uqrg9w_Draho_ickou_dolinou.kml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2356_9rh7cb807_export_2020-03-25.kml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Screenshot_20201018-191034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/export_2020-03-25.gpx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/stiahnuť.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,8 @@
       <workItem from="1604850533768" duration="1191000" />
       <workItem from="1604941215548" duration="8434000" />
       <workItem from="1605005779698" duration="32320000" />
-      <workItem from="1605089294170" duration="1853000" />
+      <workItem from="1605089294170" duration="2699000" />
+      <workItem from="1605092381050" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -125,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605051236936</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A lot of changes.">
+      <created>1605091446304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605091446305</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,15 +170,19 @@
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604793424067" />
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605091123954">
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605092626121">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605091123954" />
-    <state x="2629" y="295" key="FileChooserDialogImpl" timestamp="1605042336431">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092626121" />
+    <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605091573757">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1604063756596" />
+    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605091573757" />
     <state x="2629" y="295" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605042336431" />
+    <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog" timestamp="1605092552868">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092552868" />
     <state x="595" y="370" key="NewPhpFileDialog" timestamp="1605028262444">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -181,14 +193,18 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605090842143">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605092726297">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605090842143" />
-    <state x="31" y="0" width="1359" height="882" key="dock-window-1" timestamp="1605089650013">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092726297" />
+    <state x="543" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605092473193">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605089650013" />
+    <state x="543" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092473193" />
+    <state x="31" y="0" width="1359" height="882" key="dock-window-1" timestamp="1605092019987">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092019987" />
     <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605014616826" />
     <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605089420565">
       <screen x="0" y="0" width="1450" height="864" />
