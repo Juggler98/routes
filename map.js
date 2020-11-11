@@ -10,7 +10,7 @@
         //     disableDefaultUI: true,
         // };
 
-        for (i = 1; i <= 100; i++) {
+        for (i = 1; i <= 4; i++) {
             let text = "map" + i.toString();
             map = new google.maps.Map(document.getElementById(text), {disableDefaultUI: true});
             const ctaLayer = new google.maps.KmlLayer({

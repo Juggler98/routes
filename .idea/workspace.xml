@@ -19,29 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activitymap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calendar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clubs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/album.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/stiahnuť.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tracking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="A lot of changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1200px-Geocaching.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_20201018-191034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/stiahnuť.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +66,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hangman" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -121,7 +108,8 @@
       <workItem from="1604834802731" duration="2318000" />
       <workItem from="1604850533768" duration="1191000" />
       <workItem from="1604941215548" duration="8434000" />
-      <workItem from="1605005779698" duration="31617000" />
+      <workItem from="1605005779698" duration="32320000" />
+      <workItem from="1605089294170" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -130,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603044663879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A lot of changes.">
+      <created>1605051236936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605051236936</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +145,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="A lot of changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of changes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -166,6 +162,10 @@
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604793424067" />
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605091123954">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605091123954" />
     <state x="2629" y="295" key="FileChooserDialogImpl" timestamp="1605042336431">
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
@@ -181,15 +181,19 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1603045389818">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605090842143">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603045389818" />
-    <state x="31" y="0" width="1359" height="882" key="dock-window-1" timestamp="1605045563382">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605090842143" />
+    <state x="31" y="0" width="1359" height="882" key="dock-window-1" timestamp="1605089650013">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605045563382" />
+    <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605089650013" />
     <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605014616826" />
+    <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605089420565">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605089420565" />
     <state x="2512" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605008818635">
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>

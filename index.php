@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="./img/Snímka.PNG">
+    <link rel="icon" href="img/tabicon.PNG">
 
     <style>
         <?php
@@ -43,7 +43,7 @@
 
                 <?php
 
-                for ($i = 1; $i < 20; $i++) {
+                for ($i = 1; $i < 4; $i++) {
 
                     echo '<div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow">
@@ -71,7 +71,7 @@
 
                             </div>
                             <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
+                                <div class="btn-group-feed">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
                                 </div>

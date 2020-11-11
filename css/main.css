@@ -61,10 +61,17 @@ body{
 
 }
 
-.btn-group  {
+.btn-group-feed  {
     /*position: relative;*/
     /*transform: translate(150%);*/
-    float: right !important;
+    float: right;
+}
+
+.btn-group .btn-group-toggle {
+    position: relative;
+    /*float: left !important;*/
+    /*padding-bottom: 2rem;*/
+    padding-top: 0 !important;
 }
 
 .jumbotron-heading {
