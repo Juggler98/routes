@@ -1,3 +1,8 @@
+<?php
+    include './class/DBStorage.php';
+    include './class/Activity.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,26 +24,18 @@
         include 'css/album.css';
         ?>
     </style>
+    <?php include 'navbar.html'; ?>
 </head>
 <body>
 
-<?php include 'navbar.html'; ?>
-
-
-
-
-
-
 <div class="bg-light">
-
-    <div class="containe">
+    <div>
         <h1 class="page-title">My Activities</h1>
     </div>
 
 <table class="table table-striped">
     <thead>
     <tr>
-<!--        <th scope="col">#</th>-->
         <th scope="col">Type</th>
         <th scope="col">Date</th>
         <th scope="col">Title</th>
@@ -48,28 +45,32 @@
     </tr>
     </thead>
     <tbody>
+
     <?php
-    for ($i = 100; $i >= 1; $i--) {
+    $storage = new DBStorage();
+    $activities = $storage->loadAllData();
+
+    /** @var Activity $activity */
+    foreach ($activities as $activity) {
     echo '<tr>
-        <td>Hike</td>
-        <td>10.11.2020</td>
+        <td>' . $activity->getType() . '</td>
+        <td>' . "nieco" . '</td>
         <td><a href="activity.php">Krásny vrch</a></td>
-        <td>1:39:00</td>
-        <td>7.48 km</td>
-        <td>275 m</td>
+        <td>' . $activity->getTime() . '</td>
+        <td>' . $activity->getDistance() . '</td>
+        <td>' . $activity->getElevation() . '</td>
     </tr>'; }
 
     ?>
     </tbody>
 </table>
 
-</div>>
+</div>
 
 <script>
 <?php
 include 'scripts.html';
 ?>
 </script>
-
 </body>
 </html>

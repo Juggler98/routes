@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="A lot of changes.">
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Deleted unnecessary files">
+      <change afterPath="$PROJECT_DIR$/class/Activity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1605104917827" duration="83000" />
       <workItem from="1605196667597" duration="1976000" />
       <workItem from="1605211966153" duration="37000" />
-      <workItem from="1605378229768" duration="3316000" />
+      <workItem from="1605378229768" duration="6995000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605092736865</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Deleted unnecessary files">
+      <created>1605381931952</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605381931952</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="A lot of changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of changes." />
+    <MESSAGE value="Deleted unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted unnecessary files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -176,10 +185,14 @@
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604793424067" />
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605092626121">
+    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605382523770">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092626121" />
+    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605382523770" />
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605381647905">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605381647905" />
     <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605378274240">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -189,6 +202,10 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092552868" />
+    <state x="473" y="155" key="NewPhpClassDialog" timestamp="1605386230523">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605386230523" />
     <state x="595" y="370" key="NewPhpFileDialog" timestamp="1605028262444">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -199,10 +216,10 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605092743962">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605381947395">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092743962" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605381947395" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
