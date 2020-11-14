@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="A lot of changes.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11__11__2020_11_56__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11__11__2020_11_56__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0008_y09uqrg9w_Draho_ickou_dolinou.kml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2356_9rh7cb807_export_2020-03-25.kml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/export_2020-03-25.gpx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/stiahnuť.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +57,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cv6" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -110,7 +105,11 @@
       <workItem from="1604941215548" duration="8434000" />
       <workItem from="1605005779698" duration="32320000" />
       <workItem from="1605089294170" duration="2699000" />
-      <workItem from="1605092381050" duration="302000" />
+      <workItem from="1605092381050" duration="1019000" />
+      <workItem from="1605104917827" duration="83000" />
+      <workItem from="1605196667597" duration="1976000" />
+      <workItem from="1605211966153" duration="37000" />
+      <workItem from="1605378229768" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -133,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605091446305</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A lot of changes.">
+      <created>1605092736865</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605092736865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,10 +168,10 @@
     </state>
     <state x="496" y="146" key="#PHP/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605024087248" />
     <state x="2556" y="183" key="#PHP/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604958960509" />
-    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603030272499">
+    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605378365245">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603030272499" />
+    <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605378365245" />
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604793424067">
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
@@ -174,10 +180,10 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092626121" />
-    <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605091573757">
+    <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605378274240">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605091573757" />
+    <state x="553" y="236" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605378274240" />
     <state x="2629" y="295" key="FileChooserDialogImpl/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605042336431" />
     <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog" timestamp="1605092552868">
       <screen x="0" y="0" width="1450" height="864" />
@@ -193,10 +199,18 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605092726297">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605092743962">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092726297" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092743962" />
+    <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605378395092" />
+    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605381226409">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605381226409" />
     <state x="543" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605092473193">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
