@@ -211,3 +211,15 @@ body{
 .stats-table .table-title {
     border: black;
 }
+
+.sign-in {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(0,25vh);
+}
+
+.sign-in h2 {
+    position: relative;
+    text-align: center;
+}

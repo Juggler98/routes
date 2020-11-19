@@ -1,6 +1,14 @@
 <?php
     include './class/DBStorage.php';
     include './class/Activity.php';
+
+    session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +56,7 @@
 
     <?php
     $storage = new DBStorage();
-    $activities = $storage->loadAllData();
+    $activities = $storage->loadAllActivities();
 
     /** @var Activity $activity */
     foreach ($activities as $activity) {

@@ -1,3 +1,17 @@
+<?php
+include './class/DBStorage.php';
+include './class/Activity.php';
+include './class/Athlete.php';
+
+session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Athletes</title>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-        defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
+            defer
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -23,25 +37,54 @@
 <body>
 
 
-
 <?php include 'navbar.html'; ?>
 
 <div class="bg-light odsadenie">
 
-<div>
-    <h1 class="page-title">Athletes</h1>
-</div>
+    <div>
+        <h1 class="page-title">Athletes</h1>
+    </div>
+    <form method="post">
+    <ul class="list-group list-width">
 
-<ul class="list-group list-width">
-    <?php
-    for ($i = 0; $i < 50; $i++) {
-        echo '<li class="list-group-item">Adam Belianský
-                        <button type="button" class="btn btn-light btn-ath">Follow</button></li>';
+            <?php
 
-    }
-    ?>
-</ul>
+            $storage = new DBStorage();
+            $athletes = $storage->loadAllAthletes();
 
+            if (isset($_POST['id'])) {
+                if ($athletes[$_POST['id']-1]->getFollowing()) {
+                    $storage->unfollow($_POST['id']);
+                } else {
+                    $storage->follow($_POST['id']);
+                }
+            }
+
+            $athletes = $storage->loadAllAthletes();
+
+            $id = 1;
+            /** @var Athlete $athlete */
+            foreach ($athletes as $athlete) {
+                echo '<li class="list-group-item">' . $athlete->getName() . ' ' . $athlete->getSurname();
+                if ($athlete->getId() == $_SESSION['id']) {
+                    echo '';
+                } else {
+                    if ($athlete->getFollowing()) {
+                        echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-danger btn-ath">Unfollow</button></li>';
+                    } else {
+                        echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-success btn-ath">Follow</button></li>';
+                    }
+                }
+                ++$id;
+            }
+
+
+
+
+            ?>
+
+    </ul>
+    </form>
 </div>
 
 <script>
