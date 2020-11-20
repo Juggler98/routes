@@ -1,3 +1,18 @@
+<?php
+include './class/DBStorage.php';
+include './class/Activity.php';
+include './class/Athlete.php';
+include './class/Club.php';
+
+session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,16 +47,42 @@
         <h1 class="page-title">Clubs</h1>
     </div>
 
+    <form method="post">
     <ul class="list-group list-width">
-        <?php
-        for ($i = 0; $i < 50; $i++) {
-            echo '<li class="list-group-item">Žilina runners
-                        <button type="button" class="btn btn-light btn-ath">Join</button></li>';
 
+        <?php
+
+        $storage = new DBStorage();
+        $clubs = $storage->loadAllClubs();
+
+        if (isset($_POST['id'])) {
+            if ($clubs[$_POST['id']-1]->getMembership()) {
+                $storage->leave($_POST['id']);
+            } else {
+                $storage->join($_POST['id']);
+            }
         }
+
+        $clubs = $storage->loadAllClubs();
+
+        $id = 1;
+        /** @var Club $club */
+        foreach ($clubs as $club) {
+            echo '<li class="list-group-item" style="min-height: 64px">' . $club->getTitle();
+                if ($club->getMembership()) {
+                    echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-danger btn-ath">Leave</button></li>';
+                } else {
+                    echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-success btn-ath">Join</button></li>';
+                }
+            ++$id;
+        }
+
+
+
+
         ?>
     </ul>
-
+    </form>
 </div>
 
 <script>

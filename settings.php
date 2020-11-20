@@ -96,10 +96,15 @@ if (isset($_POST['save'])) {
 
             if (isset($_POST['passwordChanged'])) {
                 if ($storage->checkPassword($_POST['oldPassword']) && $_POST['newPassword'] == $_POST['repeatPassword']) {
-                    $storage->changePassword($_POST['newPassword']);
-                    echo '<div class="alert alert-success">
-                    Password was changed.
-                    </div>';
+                    if ($storage->changePassword($_POST['newPassword'])) {
+                        echo '<div class="alert alert-success">
+                        Password was changed.
+                        </div>';
+                    } else {
+                        echo '<div class="alert alert-danger">
+                        Password was not changed.
+                        </div>';
+                    }
                 } else {
                     if (!$storage->checkPassword($_POST['oldPassword'])) {
                         echo '<div class="alert alert-danger">

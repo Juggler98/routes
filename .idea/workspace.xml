@@ -19,17 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added login page, registration, following system and other work with database.">
-      <change afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Form restrictions, settings page, logout.">
+      <change afterPath="$PROJECT_DIR$/class/Club.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/athletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clubs.php" beforeDir="false" afterPath="$PROJECT_DIR$/clubs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +115,7 @@
       <workItem from="1605785082101" duration="6728000" />
       <workItem from="1605800672767" duration="15514000" />
       <workItem from="1605822307075" duration="751000" />
-      <workItem from="1605866980241" duration="18127000" />
+      <workItem from="1605866980241" duration="21899000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -171,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605816950035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Form restrictions, settings page, logout.">
+      <created>1605886304155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605886304155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +197,8 @@
     <MESSAGE value="Deleted unnecessary files" />
     <MESSAGE value="Added database" />
     <MESSAGE value="Added login page, registration, following system and other work with database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login page, registration, following system and other work with database." />
+    <MESSAGE value="Form restrictions, settings page, logout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Form restrictions, settings page, logout." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -211,10 +214,10 @@
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604793424067" />
-    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605811772537">
+    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605888259944">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605811772537" />
+    <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888259944" />
     <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605381647905">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -228,10 +231,10 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092552868" />
-    <state x="473" y="155" key="NewPhpClassDialog" timestamp="1605811719826">
+    <state x="473" y="155" key="NewPhpClassDialog" timestamp="1605888175775">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605811719826" />
+    <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888175775" />
     <state x="2683" y="463" key="NewPhpFileDialog" timestamp="1605878850856">
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
@@ -242,18 +245,18 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605816953704">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605886304499">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605816953704" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605886304499" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605378395092" />
-    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605812196398">
+    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605889539082">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605812196398" />
+    <state x="409" y="0" width="868" height="778" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605889539082" />
     <state x="543" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605092473193">
       <screen x="0" y="0" width="1450" height="864" />
     </state>

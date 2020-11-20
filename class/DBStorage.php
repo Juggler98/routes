@@ -87,6 +87,23 @@ class DBStorage
         return $athletes;
     }
 
+    function loadAllClubs() {
+        $clubs = [];
+        $stmt = $this->db->prepare('SELECT * FROM club');
+        $stmt->execute();
+        $dbClubs = $stmt->fetchAll();
+        foreach ($dbClubs as $club) {
+            $clubs[] = new Club($club['id_club'], $club['title_club'], 1);
+        }
+        $stmt = $this->db->prepare('SELECT id_club FROM membership where id_user = ?');
+        $stmt->execute([$_SESSION['id']]);
+        $dbClubs = $stmt->fetchAll();
+        foreach ($dbClubs as $club) {
+            $clubs[$club['id_club'] - 1]->setMembership(true);
+        }
+        return $clubs;
+    }
+
     function follow($id)
     {
         $stmt = $this->db->prepare('INSERT INTO following (id_user, id_friend) 
@@ -97,6 +114,19 @@ class DBStorage
     function unfollow($id)
     {
         $stmt = $this->db->prepare('DELETE FROM following where id_user = ? and id_friend = ?');
+        return $stmt->execute([$_SESSION['id'], $id]);
+    }
+
+    function join($id)
+    {
+        $stmt = $this->db->prepare('INSERT INTO membership (id_user, id_club) 
+                                                VALUES (?, ?)');
+        return $stmt->execute([$_SESSION['id'], $id]);
+    }
+
+    function leave($id)
+    {
+        $stmt = $this->db->prepare('DELETE FROM membership where id_user = ? and id_club = ?');
         return $stmt->execute([$_SESSION['id'], $id]);
     }
 
@@ -133,11 +163,13 @@ class DBStorage
         return false;
     }
 
-
     function changePassword($newPassword)
     {
-        $stmt = $this->db->prepare('UPDATE user SET password = ? WHERE id_user = ?');
-        return $stmt->execute([$newPassword, $_SESSION['id']]);
+        if (!$this->checkPassword($newPassword)) {
+            $stmt = $this->db->prepare('UPDATE user SET password = ? WHERE id_user = ?');
+            return $stmt->execute([$newPassword, $_SESSION['id']]);
+        }
+        return false;
     }
 
 
