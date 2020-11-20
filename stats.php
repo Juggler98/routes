@@ -20,7 +20,7 @@
         ?>
     </style>
 </head>
-<body>
+<body class="bg-light">
 
 <?php include 'navbar.html'; ?>
 

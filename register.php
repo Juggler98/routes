@@ -28,7 +28,7 @@ include './class/Activity.php';
     </style>
 
 </head>
-<body>
+<body class="bg-light">
 <nav class="navbar navbar-inverse navbar-expand-sm navbar-light my-navigationBar">
     <span class="navbar-brand">
         <i class="large material-icons">directions_run</i>

@@ -34,7 +34,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     </style>
     <?php include 'navbar.html'; ?>
 </head>
-<body>
+<body class="bg-light">
 
 <div class="bg-light">
     <div>

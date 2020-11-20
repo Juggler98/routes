@@ -35,13 +35,13 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
         ?>
     </style>
 </head>
-<body>
+<body class="bg-light">
 
 
 
 <?php include 'navbar.html'; ?>
 
-<div class="bg-light odsadenie">
+<div class="odsadenie">
 
     <div>
         <h1 class="page-title">Clubs</h1>

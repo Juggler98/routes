@@ -19,12 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Form restrictions, settings page, logout.">
-      <change afterPath="$PROJECT_DIR$/class/Club.php" afterDir="false" />
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added clubs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/athletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clubs.php" beforeDir="false" afterPath="$PROJECT_DIR$/clubs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +120,7 @@
       <workItem from="1605785082101" duration="6728000" />
       <workItem from="1605800672767" duration="15514000" />
       <workItem from="1605822307075" duration="751000" />
-      <workItem from="1605866980241" duration="21899000" />
+      <workItem from="1605866980241" duration="23083000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605886304155</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added clubs">
+      <created>1605890277710</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605890277710</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +210,8 @@
     <MESSAGE value="Added database" />
     <MESSAGE value="Added login page, registration, following system and other work with database." />
     <MESSAGE value="Form restrictions, settings page, logout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Form restrictions, settings page, logout." />
+    <MESSAGE value="Added clubs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added clubs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -245,10 +258,10 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605886304499">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605890297168">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605886304499" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605890297168" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
