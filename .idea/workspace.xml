@@ -19,16 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added database">
-      <change afterPath="$PROJECT_DIR$/class/Athlete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added login page, registration, following system and other work with database.">
+      <change afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/athletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/class/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hangman" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -117,7 +118,9 @@
       <workItem from="1605211966153" duration="37000" />
       <workItem from="1605378229768" duration="7984000" />
       <workItem from="1605785082101" duration="6728000" />
-      <workItem from="1605800672767" duration="15422000" />
+      <workItem from="1605800672767" duration="15514000" />
+      <workItem from="1605822307075" duration="751000" />
+      <workItem from="1605866980241" duration="18127000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -161,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605387863634</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added login page, registration, following system and other work with database.">
+      <created>1605816950035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605816950035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +194,8 @@
     <MESSAGE value="A lot of changes." />
     <MESSAGE value="Deleted unnecessary files" />
     <MESSAGE value="Added database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database" />
+    <MESSAGE value="Added login page, registration, following system and other work with database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added login page, registration, following system and other work with database." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -221,20 +232,20 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605811719826" />
-    <state x="595" y="370" key="NewPhpFileDialog" timestamp="1605785420225">
-      <screen x="0" y="0" width="1450" height="864" />
+    <state x="2683" y="463" key="NewPhpFileDialog" timestamp="1605878850856">
+      <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="595" y="370" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605785420225" />
-    <state x="2683" y="463" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604961620282" />
+    <state x="2683" y="463" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605878850856" />
     <state x="175" y="62" key="SettingsEditor" timestamp="1603043393640">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605387874633">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605816953704">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605387874633" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605816953704" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -260,13 +271,14 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605089420565" />
-    <state x="382" y="197" key="run.anything.popup" timestamp="1605812382361">
+    <state x="382" y="197" key="run.anything.popup" timestamp="1605874457830">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="382" y="197" key="run.anything.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605812382361" />
-    <state x="2512" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605008818635">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="382" y="197" key="run.anything.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605874457830" />
+    <state x="462" y="188" width="525" height="543" key="search.everywhere.popup" timestamp="1605870131661">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
+    <state x="462" y="188" width="525" height="543" key="search.everywhere.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605870131661" />
     <state x="2512" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605008818635" />
   </component>
 </project>

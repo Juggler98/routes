@@ -29,8 +29,6 @@ class DBStorage
                     session_start();
                     $_SESSION['logged'] = true;
                     $_SESSION['id'] = $row['id_user'];
-                    $_SESSION['name'] = $row['name'];
-                    $_SESSION['surname'] = $row['lastname'];
                     return true;
                 }
             }
@@ -38,17 +36,20 @@ class DBStorage
         return false;
     }
 
-    function checkIfRegistered($email) {
+
+    function checkIfRegistered($email)
+    {
         $stmt = $this->db->prepare('SELECT * FROM user WHERE email = (?)');
         if ($stmt->execute([$email])) {
             if ($stmt->rowCount() == 1) {
-                    return true;
-                }
+                return true;
             }
+        }
         return false;
     }
 
-    function register($email, $password, $name, $surname) {
+    function register($email, $password, $name, $surname)
+    {
         $stmt = $this->db->prepare('INSERT INTO user (email, password, name, lastname) 
                                                 VALUES (?, ?, ?, ?)');
         return $stmt->execute([$email, $password, $name, $surname]);
@@ -68,7 +69,8 @@ class DBStorage
         return $activities;
     }
 
-    function loadAllAthletes() {
+    function loadAllAthletes()
+    {
         $athletes = [];
         $stmt = $this->db->prepare('SELECT * FROM user');
         $stmt->execute();
@@ -80,20 +82,62 @@ class DBStorage
         $stmt->execute([$_SESSION['id']]);
         $dbAthletes = $stmt->fetchAll();
         foreach ($dbAthletes as $athlete) {
-            $athletes[$athlete['id_friend']-1]->setFollowing(true);
+            $athletes[$athlete['id_friend'] - 1]->setFollowing(true);
         }
         return $athletes;
     }
 
-    function follow($id) {
+    function follow($id)
+    {
         $stmt = $this->db->prepare('INSERT INTO following (id_user, id_friend) 
                                                 VALUES (?, ?)');
         return $stmt->execute([$_SESSION['id'], $id]);
     }
 
-    function unfollow($id) {
+    function unfollow($id)
+    {
         $stmt = $this->db->prepare('DELETE FROM following where id_user = ? and id_friend = ?');
         return $stmt->execute([$_SESSION['id'], $id]);
+    }
+
+    function getCredentials()
+    {
+        $stmt = $this->db->prepare('SELECT * FROM user WHERE id_user = ?');
+        $stmt->execute([$_SESSION['id']]);
+        $row = $stmt->fetch();
+        $credentials[0] = $row['name'];
+        $credentials[1] = $row['lastname'];
+        $credentials[2] = $row['email'];
+        return $credentials;
+    }
+
+    function changeCredentials($name, $surname, $email)
+    {
+        $credentials = $this->getCredentials();
+        if ($credentials[0] != $name || $credentials[1] != $surname || $credentials[2] != $email) {
+            $stmt = $this->db->prepare('UPDATE user SET name = ?, lastname = ?, email= ? WHERE id_user = ?');
+            return $stmt->execute([$name, $surname, $email, $_SESSION['id']]);
+        }
+        return false;
+    }
+
+    function checkPassword($password)
+    {
+        $stmt = $this->db->prepare('SELECT password FROM user WHERE id_user = (?)');
+        if ($stmt->execute([$_SESSION['id']])) {
+            $row = $stmt->fetch();
+            if ($password == $row['password']) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    function changePassword($newPassword)
+    {
+        $stmt = $this->db->prepare('UPDATE user SET password = ? WHERE id_user = ?');
+        return $stmt->execute([$newPassword, $_SESSION['id']]);
     }
 
 

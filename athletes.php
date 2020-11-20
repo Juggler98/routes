@@ -39,11 +39,12 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <?php include 'navbar.html'; ?>
 
-<div class="bg-light odsadenie">
+<div class="odsadenie">
 
     <div>
         <h1 class="page-title">Athletes</h1>
     </div>
+
     <form method="post">
     <ul class="list-group list-width">
 
@@ -65,7 +66,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
             $id = 1;
             /** @var Athlete $athlete */
             foreach ($athletes as $athlete) {
-                echo '<li class="list-group-item">' . $athlete->getName() . ' ' . $athlete->getSurname();
+                echo '<li class="list-group-item" style="min-height: 64px">' . $athlete->getName() . ' ' . $athlete->getSurname();
                 if ($athlete->getId() == $_SESSION['id']) {
                     echo '';
                 } else {

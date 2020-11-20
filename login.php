@@ -2,11 +2,13 @@
 include './class/DBStorage.php';
 include './class/Activity.php';
 
+session_start();
+session_destroy();
+
 $storage = new DBStorage();
 
 if (isset($_POST['sent'])) {
     if ($storage->checkUser($_POST['email'], $_POST['password'])) {
-
         header("Location: /tracking/index.php");
         exit();
     }
@@ -49,7 +51,9 @@ if (isset($_POST['sent'])) {
 
 
 <form class="sign-in" method="post">
+    <div class="form-group">
     <label class="label h2">Log in</label>
+    </div>
     <div class="form-group">
         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
     </div>
@@ -60,6 +64,20 @@ if (isset($_POST['sent'])) {
         <button type="submit" value="login" name="sent" class="btn btn-primary">Log in</button>
     </div>
     <p>Don't have an account? <a href="/tracking/register.php">Sign up</a>.</p>
+    <?php
+
+    $storage = new DBStorage();
+
+    if (isset($_POST['sent'])) {
+        if (!$storage->checkUser($_POST['email'], $_POST['password'])) {
+                echo '<div class="alert alert-danger">
+             Your password or email is incorrect.
+            </div>';
+
+            }
+    }
+
+    ?>
 </form>
 
 

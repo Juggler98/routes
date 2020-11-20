@@ -10,7 +10,7 @@ include './class/Activity.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login</title>
+    <title>Register</title>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
             defer
@@ -39,18 +39,23 @@ include './class/Activity.php';
 
 
 <form class="sign-in" method="post">
-    <label class="label h2">Register</label>
     <div class="form-group">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+    <label class="label h2">Register</label>
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" required>
+        <input type="name" class="form-control" id="name" name="name" placeholder="Name" pattern="[^' ']+"
+               title="Name can not contain spaces." required>
+    </div>
+    <div class="form-group">
+        <input type="name" class="form-control" id="surname" name="surname" placeholder="Surname" pattern="[^' ']+"
+               title="Surname can not contain spaces." required>
     </div>
     <div class="form-group">
         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
     </div>
     <div class="form-group">
-        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" pattern=".{6,}"
+               title="Password must contain at least 6 characters." required>
     </div>
     <div class="form-group">
         <button type="submit" name="sent" class="btn btn-primary">Register</button>
@@ -68,13 +73,13 @@ include './class/Activity.php';
                 </div>';
             } else {
                 echo '<div class="alert alert-danger">
-            <strong>Error!</strong> Registration failed.
+             Registration failed.
             </div>';
 
             }
         } else {
             echo '<div class="alert alert-danger">
-            <strong>Error!</strong> Email Address is Already Registered.
+             Email address is already registered.
             </div>';
 
         }

@@ -66,8 +66,8 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Rename</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
                                 </div>
 
                             </div>
