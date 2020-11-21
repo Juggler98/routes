@@ -38,9 +38,9 @@ include './class/Activity.php';
 </nav>
 
 
-<form class="sign-in" method="post">
+<form class="register" method="post">
     <div class="form-group">
-    <label class="label h2">Register</label>
+        <label class="label h2">Register</label>
     </div>
     <div class="form-group">
         <input type="name" class="form-control" id="name" name="name" placeholder="Name" pattern="[^' ']+"
@@ -58,6 +58,10 @@ include './class/Activity.php';
                title="Password must contain at least 6 characters." required>
     </div>
     <div class="form-group">
+        <input type="password" class="form-control" id="retypePassword" name="repeatPassword"
+               placeholder="Confirm Password" required>
+    </div>
+    <div class="form-group">
         <button type="submit" name="sent" class="btn btn-primary">Register</button>
     </div>
     <p>Have an account? <a href="/tracking/login.php">Sign in</a>.</p>
@@ -66,24 +70,28 @@ include './class/Activity.php';
     $storage = new DBStorage();
 
     if (isset($_POST['sent'])) {
+        if ($_POST['password'] != $_POST['repeatPassword']) {
+            echo '<div class="alert alert-danger">
+                    Password confirmation does not match.
+                    </div>';
+        }
         if (!$storage->checkIfRegistered($_POST['email'])) {
-            if ($storage->register($_POST['email'], $_POST['password'], $_POST['name'], $_POST['surname'])) {
-                echo '<div class="alert alert-success">
-                <strong>Success!</strong> You can Sign In.
-                </div>';
-            } else {
-                echo '<div class="alert alert-danger">
-             Registration failed.
-            </div>';
-
+            if ($_POST['password'] == $_POST['repeatPassword']) {
+                if ($storage->register($_POST['email'], $_POST['password'], $_POST['name'], $_POST['surname'])) {
+                    echo '<div class="alert alert-success">
+                    <strong>Success!</strong> You can Sign In.
+                    </div>';
+                } else {
+                    echo '<div class="alert alert-danger">
+                    Registration failed.
+                    </div>';
+                }
             }
         } else {
             echo '<div class="alert alert-danger">
              Email address is already registered.
             </div>';
-
         }
-
     }
 
     ?>

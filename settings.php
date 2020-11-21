@@ -7,6 +7,10 @@ session_start();
 $storage = new DBStorage();
 
 if (isset($_POST['save'])) {
+    $emailCollision = false;
+    if ($_POST['email'] != $storage->getCredentials()[2]) {
+        $emailCollision = $storage->checkIfRegistered($_POST['email']);
+    }
     $success = $storage->changeCredentials($_POST['name'], $_POST['surname'], $_POST['email']);
 }
 
@@ -82,16 +86,22 @@ if (isset($_POST['save'])) {
 
 
             if (isset($_POST['save'])) {
-                if ($success) {
-                    echo '<div class="alert alert-success">
-                Credentials was changed.
-                </div>';
-                } else {
+                if ($emailCollision) {
                     echo '<div class="alert alert-danger">
-             Credentials was not changed.
-            </div>';
-
+                        Email address is already registered.
+                        </div>';
+                } else {
+                    if ($success) {
+                        echo '<div class="alert alert-success">
+                        Credentials was changed.
+                        </div>';
+                    } else {
+                        echo '<div class="alert alert-danger">
+                        Credentials was not changed.
+                        </div>';
+                    }
                 }
+
             }
 
             if (isset($_POST['passwordChanged'])) {
