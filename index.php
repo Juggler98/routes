@@ -56,7 +56,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
                 <?php
 
-                for ($i = 1; $i < 4; $i++) {
+                for ($i = 1; $i < 7; $i++) {
 
                     echo '<div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow">
@@ -65,21 +65,21 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                             <div class="card-text">';
                     echo 'Adam Belianský' . '</div>
                             <p class="text-muted">'
-                        . '7.11.2020 21:39' .
+                        . '9.11.2020 21:29' .
                         '<p class="card-text">'
                         . 'Afternoon ride' . '</p>
                             <div class="stats">' . '
 
                                 <div>
-                                    <p>Distance<br />23.45 km</p>
+                                    <p>Distance<br />21.35 km</p>
                                 </div>
 
                                 <div>
-                                    <p>Speed<br />12.1 km/h</p>
+                                    <p>Speed<br />12.7 km/h</p>
                                 </div>
 
                                 <div>
-                                    <p>Time<br />1h 56m</p>
+                                    <p>Time<br />2h 56m</p>
                                 </div>
 
                             </div>

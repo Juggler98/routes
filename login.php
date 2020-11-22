@@ -69,12 +69,18 @@ if (isset($_POST['sent'])) {
     $storage = new DBStorage();
 
     if (isset($_POST['sent'])) {
-        if (!$storage->checkUser($_POST['email'], $_POST['password'])) {
-                echo '<div class="alert alert-danger">
-             Your password or email is incorrect.
+        if (!$storage->checkIfRegistered($_POST['email'])) {
+            echo '<div class="alert alert-danger">
+            Email is not registered.
             </div>';
-
+        } else {
+            if (!$storage->checkUser($_POST['email'], $_POST['password'])) {
+                echo '<div class="alert alert-danger">
+                Your password is incorrect.
+                </div>';
             }
+        }
+
     }
 
     ?>

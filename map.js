@@ -10,7 +10,7 @@
         //     disableDefaultUI: true,
         // };
 
-        for (i = 1; i <= 4; i++) {
+        for (i = 1; i <= 6; i++) {
             let text = "map" + i.toString();
             map = new google.maps.Map(document.getElementById(text), {disableDefaultUI: true});
             src = 'https://drive.google.com/u/0/uc?id=1aP4Q2imMXMSRI76oRvhUq4UgWSRTb1Ua&export=download';
