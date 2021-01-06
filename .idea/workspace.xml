@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added password confirmation and email check.">
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Change password/email check.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,8 @@
       <workItem from="1605822307075" duration="751000" />
       <workItem from="1605866980241" duration="23343000" />
       <workItem from="1605973422905" duration="1829000" />
-      <workItem from="1606073189970" duration="1046000" />
+      <workItem from="1606073189970" duration="1096000" />
+      <workItem from="1606118352527" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605975237207</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Change password/email check.">
+      <created>1606074280987</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606074280987</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +228,8 @@
     <MESSAGE value="Added clubs" />
     <MESSAGE value="Changed background" />
     <MESSAGE value="Added password confirmation and email check." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added password confirmation and email check." />
+    <MESSAGE value="Change password/email check." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change password/email check." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -243,10 +249,11 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888259944" />
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605381647905">
-      <screen x="0" y="0" width="1450" height="864" />
+    <state x="2504" y="224" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606074208346">
+      <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605381647905" />
+    <state x="2504" y="224" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074208346" />
     <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605803951181">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -270,10 +277,11 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605975247728">
-      <screen x="0" y="0" width="1450" height="864" />
+    <state x="2327" y="206" key="Vcs.Push.Dialog.v2" timestamp="1606074281728">
+      <screen x="1920" y="0" width="1858" height="1080" />
     </state>
     <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605975247728" />
+    <state x="2327" y="206" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074281728" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
