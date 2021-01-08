@@ -34,7 +34,6 @@ if (isset($_POST['save'])) {
     <style>
         <?php
         include 'css/main.css';
-        include 'css/album.css';
         ?>
     </style>
 

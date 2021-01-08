@@ -30,7 +30,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <style>
         <?php
         include 'css/main.css';
-        include 'css/album.css';
         ?>
     </style>
 </head>

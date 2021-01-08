@@ -16,14 +16,13 @@
     <style>
         <?php
         include 'css/main.css';
-        include 'css/album.css';
         ?>
     </style>
 </head>
 <body>
 
 <script>
-    <?php include 'activitymap.js';
+    <?php include 'js/activitymap.js';
     ?>
 </script>
 

@@ -19,8 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Change password/email check.">
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Only Update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activitymap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/activitymap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/athletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clubs.php" beforeDir="false" afterPath="$PROJECT_DIR$/clubs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +128,10 @@
       <workItem from="1605973422905" duration="1829000" />
       <workItem from="1606073189970" duration="1096000" />
       <workItem from="1606118352527" duration="3951000" />
+      <workItem from="1609960434991" duration="689000" />
+      <workItem from="1610017889258" duration="241000" />
+      <workItem from="1610050293166" duration="639000" />
+      <workItem from="1610099419020" duration="1602000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -200,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606074280987</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Only Update.">
+      <created>1609960623389</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609960623389</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +253,8 @@
     <MESSAGE value="Changed background" />
     <MESSAGE value="Added password confirmation and email check." />
     <MESSAGE value="Change password/email check." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change password/email check." />
+    <MESSAGE value="Only Update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Only Update." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -277,10 +302,10 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="2327" y="206" key="Vcs.Push.Dialog.v2" timestamp="1606074281728">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609960630996">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605975247728" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1609960630996" />
     <state x="2327" y="206" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074281728" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />

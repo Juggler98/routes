@@ -23,7 +23,6 @@ include './class/Activity.php';
     <style>
         <?php
         include 'css/main.css';
-        include 'css/album.css';
         ?>
     </style>
 

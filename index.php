@@ -29,14 +29,13 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <style>
         <?php
         include 'css/main.css';
-        include 'css/album.css';
         ?>
     </style>
 </head>
 <body class="bg-light">
 
 <script>
-    <?php include 'map.js';
+    <?php include 'js/map.js';
 //        include 'scripts.html';
     ?>
 </script>
