@@ -132,12 +132,6 @@ if (isset($_POST['save'])) {
         </form>
 </div>
 
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
 </body>
 </html>
 

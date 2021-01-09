@@ -75,11 +75,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 </div>
 
-<script>
-<?php
-include 'scripts.html';
-?>
-</script>
 <script src="js/activityInfo.js"></script>
 </body>
 </html>

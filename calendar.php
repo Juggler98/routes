@@ -77,9 +77,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
             $storage = new DBStorage();
             $activities = $storage->loadAllActivities();
 
-
-
-
             $months = array("JAN", "FEB", "MAR", "APR", "MAJ", "JUN", "JUL", "AUG", "SEP", "OKT", "NOV", "DEC");
 
             $distance = array(12);
@@ -145,13 +142,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
         </div>
     </div>
 </div>
-
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
 
 </body>
 </html>

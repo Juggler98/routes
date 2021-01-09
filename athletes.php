@@ -78,21 +78,11 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                 ++$id;
             }
 
-
-
-
             ?>
 
     </ul>
     </form>
 </div>
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
-
 
 </body>
 </html>

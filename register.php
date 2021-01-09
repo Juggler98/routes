@@ -2,7 +2,6 @@
 include './class/DBStorage.php';
 include './class/Activity.php';
 
-
 ?>
 
 <!DOCTYPE html>
@@ -96,12 +95,6 @@ include './class/Activity.php';
     ?>
 </form>
 
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
 </body>
 </html>
 

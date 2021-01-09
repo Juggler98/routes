@@ -86,13 +86,6 @@ if (isset($_POST['sent'])) {
 </form>
 
 
-
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
 </body>
 </html>
 

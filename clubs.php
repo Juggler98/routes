@@ -84,12 +84,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     </form>
 </div>
 
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
-
 
 </body>
 </html>

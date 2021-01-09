@@ -90,7 +90,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                     </div>
                 </div>';
 
-
             ?>
 
         </div>
@@ -104,11 +103,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     </div>
 </div>
 
-<script>
-<?php
-include 'scripts.html';
-?>
-</script>
 <script src="js/activityDetails.js"></script>
 
 </body>

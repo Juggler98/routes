@@ -75,7 +75,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <script>
     <?php
-    include 'scripts.html';
     //include 'js/map.js'
     ?>
 </script>

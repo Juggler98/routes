@@ -57,10 +57,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
                 <?php
 
-
-
-
-                for ($i = 1; $i < 5; $i++) {
+                for ($i = 1; $i < 4; $i++) {
 
                     echo '<div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow">
@@ -107,18 +104,5 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 </main>
 
-<!--<footer class="text-muted">-->
-<!--    <div class="container">-->
-<!--        <p class="float-right">-->
-<!--            <a href="#">Back to top</a>-->
-<!--        </p>-->
-<!--    </div>-->
-<!--</footer>-->
-
-<script>
-    <?php
-    include 'scripts.html';
-    ?>
-</script>
 </body>
 </html>
