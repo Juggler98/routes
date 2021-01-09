@@ -5,12 +5,13 @@ namespace App\Models;
 class User extends \App\Core\Model
 {
 
-    protected $id;
+    protected $id_user;
     protected $name;
     protected $lastname;
 
-    public function __construct($name, $lastname)
+    public function __construct($id = "", $name = "", $lastname = "")
     {
+        $this->id_user = $id;
         $this->name = $name;
         $this->lastname =$lastname;
     }
@@ -55,5 +56,21 @@ class User extends \App\Core\Model
     public function setLastname($lastname): void
     {
         $this->lastname = $lastname;
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getId()
+    {
+        return $this->id_user;
+    }
+
+    /**
+     * @param mixed|string $id
+     */
+    public function setId($id): void
+    {
+        $this->id_user = $id;
     }
 }

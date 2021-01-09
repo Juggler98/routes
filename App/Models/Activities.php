@@ -8,32 +8,71 @@ use DateTime;
 
 class Activities extends \App\Core\Model
 {
-    protected $activityId;
-    protected $userId;
+    protected $id_activity;
+    protected $id_user;
 
-    protected $type;
-    protected $timeStart;
-    protected $timeEnd;
+    protected $type_activity;
+    protected $time_start;
+    protected $time_end;
     protected $public;
-    protected $title;
+    protected $title_activity;
     protected $file;
     protected $distance;
-    protected $elevation;
-    protected $movTime;
+    protected $ele_gain;
+    protected $mov_time;
+    protected $name;
 
-//    protected
 
-    public function __construct($activityId = "", $userId = "", $type = "", $timeStart = "", $timeEnd = "", $public = "", $distance = "", $elevation = "")
+    protected ?User $user = null;
+
+    public function __construct($activityId = "", $userId = "", $type = "", $timeStart = "", $timeEnd = "", $public = "", $distance = "", $elevation = "", $name = "")
     {
-        $this->activityId = $activityId;
-        $this->userId = $userId;
-        $this->type = $type;
-        $this->timeStart = $timeStart;
-        $this->timeEnd = $timeEnd;
+        $this->id_activity = $activityId;
+        $this->id_user = $userId;
+        $this->type_activity = $type;
+        $this->time_start = $timeStart;
+        $this->time_end = $timeEnd;
         $this->public = $public;
         $this->distance = $distance;
-        $this->elevation = $elevation;
+        $this->ele_gain = $elevation;
+        $this->name = $name;
         //$this->movTime = $this->calculateTime();
+    }
+
+    public function loadUser() {
+//        $this->user = User::getOne(1);
+    }
+
+    /**
+     * @return User|null
+     */
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User|null $user
+     */
+    public function setUser(?User $user): void
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name): void
+    {
+        $this->name = $name;
     }
 
     private function calculateTime()
@@ -76,7 +115,7 @@ class Activities extends \App\Core\Model
      */
     public function getActivityId()
     {
-        return $this->activityId;
+        return $this->id_activity;
     }
 
     /**
@@ -84,7 +123,7 @@ class Activities extends \App\Core\Model
      */
     public function setActivityId($activityId): void
     {
-        $this->activityId = $activityId;
+        $this->id_activity = $activityId;
     }
 
     /**
@@ -92,7 +131,7 @@ class Activities extends \App\Core\Model
      */
     public function getUserId()
     {
-        return $this->userId;
+        return $this->id_user;
     }
 
     /**
@@ -100,7 +139,7 @@ class Activities extends \App\Core\Model
      */
     public function setUserId($userId): void
     {
-        $this->userId = $userId;
+        $this->id_user = $userId;
     }
 
     /**
@@ -108,7 +147,7 @@ class Activities extends \App\Core\Model
      */
     public function getType()
     {
-        return $this->type;
+        return $this->type_activity;
     }
 
     /**
@@ -116,7 +155,7 @@ class Activities extends \App\Core\Model
      */
     public function setType($type): void
     {
-        $this->type = $type;
+        $this->type_activity = $type;
     }
 
     /**
@@ -124,15 +163,15 @@ class Activities extends \App\Core\Model
      */
     public function getTimeStart()
     {
-        return $this->timeStart;
+        return $this->time_start;
     }
 
     /**
-     * @param mixed $timeStart
+     * @param mixed $time_start
      */
-    public function setTimeStart($timeStart): void
+    public function setTimeStart($time_start): void
     {
-        $this->timeStart = $timeStart;
+        $this->time_start = $time_start;
     }
 
     /**
@@ -140,30 +179,30 @@ class Activities extends \App\Core\Model
      */
     public function getTimeEnd()
     {
-        return $this->timeEnd;
+        return $this->time_end;
     }
 
     /**
-     * @param mixed $timeEnd
+     * @param mixed $time_end
      */
-    public function setTimeEnd($timeEnd): void
+    public function setTimeEnd($time_end): void
     {
-        $this->timeEnd = $timeEnd;
+        $this->time_end = $time_end;
     }
 
     /**
      * @return mixed|string
      */
-    public function getElevation()
+    public function getElegain()
     {
-        return $this->elevation;
+        return $this->ele_gain;
     }
 
     /**
-     * @param mixed|string $elevation
+     * @param mixed|string $ele_gain
      */
-    public function setElevation($elevation): void
+    public function setElegain($ele_gain): void
     {
-        $this->elevation = $elevation;
+        $this->ele_gain = $ele_gain;
     }
 }

@@ -19,17 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added JavaScript, AJAX, MVC and others">
-      <change afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/activityDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/activityInfo.js" afterDir="false" />
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Added dynamic stats, calendar, admin page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Activity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/ActivityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/ActivityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Activities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +132,7 @@
       <workItem from="1610017889258" duration="241000" />
       <workItem from="1610050293166" duration="639000" />
       <workItem from="1610099419020" duration="31280000" />
-      <workItem from="1610189642274" duration="11581000" />
+      <workItem from="1610189642274" duration="19799000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -250,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610190011734</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added dynamic stats, calendar, admin page">
+      <created>1610203677863</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610203677863</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +286,8 @@
     <MESSAGE value="Delete unnecessary things and reorganized." />
     <MESSAGE value="Added JavaScript, AJAX, MVC." />
     <MESSAGE value="Added JavaScript, AJAX, MVC and others" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JavaScript, AJAX, MVC and others" />
+    <MESSAGE value="Added dynamic stats, calendar, admin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic stats, calendar, admin page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -304,6 +308,10 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888259944" />
+    <state x="67" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610207848941">
+      <screen x="0" y="0" width="1450" height="864" />
+    </state>
+    <state x="67" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610207848941" />
     <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610127148349">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
@@ -332,10 +340,10 @@
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610190020696">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610203677630">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610190020696" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610203677630" />
     <state x="2327" y="206" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074281728" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
