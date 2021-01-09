@@ -39,7 +39,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 <body class="bg-light">
 
 <script>
-    <?php include 'js/map.js';
+    <?php //include 'js/map.js';
     include 'js/activity.js';
     ?>
 </script>
@@ -76,6 +76,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 <script>
     <?php
     include 'scripts.html';
+    //include 'js/map.js'
     ?>
 </script>
 </body>
