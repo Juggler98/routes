@@ -1,3 +1,16 @@
+<?php
+include './class/DBStorage.php';
+include './class/Activity.php';
+
+session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +63,13 @@
 
         <div class="container">
 
+            <?php
+
+            $storage = new DBStorage();
+            $activities = $storage->loadAllActivities();
+
+            ?>
+
             <table class="table table-striped stats-table">
                 <thead>
                 <tr>
@@ -66,33 +86,56 @@
                             <?php
                             echo $_GET['year'];
                             ?>
-                        </i> <a href="/tracking/stats.php/?year=
+            </i> <a href="/tracking/stats.php/?year=
                         <?php
-                        echo $_GET['year'] + 1;
-                        ?>
+            echo $_GET['year'] + 1;
+            ?>
                         " class="material-icons">
-                            navigate_next
-                        </a></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Distance</td>
-                    <td id="distance">50 km</td>
-                </tr>
-                <tr>
-                    <td>Time</td>
-                    <td>15 h</td>
-                </tr>
-                <tr>
-                    <td>Elev. Gain</td>
-                    <td>250 m</td>
-                </tr>
-                <tr>
-                    <td>Runs</td>
-                    <td>40</td>
-                </tr>
-                </tbody>
+                navigate_next
+            </a></th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <?php
+
+            $distance = 0;
+            $time = 0;
+            $elevation = 0;
+            $count = 0;
+            /** @var Activity $activity */
+            foreach ($activities as $activity) {
+                if ($activity->getYear() == $_GET['year']) {
+                    $distance += $activity->getDistance();
+                    $time += $activity->getTime();
+                    $elevation += $activity->getElevation();
+                    $count++;
+                }
+            }
+            $time /= 3600;
+            $time = floor($time * 10) / 10;
+
+
+            ?>
+
+
+            <tr>
+                <td>Distance</td>
+                <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <?php echo '<td>' . $time . ' h</td>' ?>
+            </tr>
+            <tr>
+                <td>Elev. Gain</td>
+                <?php echo '<td>' . $elevation . ' m</td>' ?>
+            </tr>
+            <tr>
+                <td>Runs</td>
+                <?php echo '<td>' . $count . '</td>' ?>
+            </tr>
+            </tbody>
             </table>
         </div>
         <div class="odsadenie">
@@ -103,21 +146,37 @@
                 </tr>
                 </thead>
                 <tbody>
+
+                <?php
+                $distance = 0;
+                $time = 0;
+                $elevation = 0;
+                $count = 0;
+                /** @var Activity $activity */
+                foreach ($activities as $activity) {
+                    $distance += $activity->getDistance();
+                    $time += $activity->getTime();
+                    $elevation += $activity->getElevation();
+                }
+                $time /= 3600;
+                $time = floor($time * 10) / 10;
+                ?>
+
                 <tr>
                     <td>Distance</td>
-                    <td>50 km</td>
+                    <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
                 </tr>
                 <tr>
                     <td>Time</td>
-                    <td>15 h</td>
+                    <?php echo '<td>' . $time . ' h</td>' ?>
                 </tr>
                 <tr>
                     <td>Elev. Gain</td>
-                    <td>250 m</td>
+                    <?php echo '<td>' . $elevation . ' m</td>' ?>
                 </tr>
                 <tr>
                     <td>Runs</td>
-                    <td>40</td>
+                    <?php echo '<td>' . sizeof($activities) . '</td>' ?>
                 </tr>
                 </tbody>
             </table>

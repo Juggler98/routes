@@ -3,6 +3,7 @@
 
 class activity
 {
+    private $id;
     private $type;
     private $timeStart;
     private $timeEnd;
@@ -13,8 +14,9 @@ class activity
     private $elevation;
     private $movTime;
 
-    public function __construct($type, $timeStart, $timeEnd, $public, $distance, $elevation, $title)
+    public function __construct($id, $type, $timeStart, $timeEnd, $public, $distance, $elevation, $title)
     {
+        $this->id = $id;
         $this->type = $type;
         $this->timeStart = $timeStart;
         $this->timeEnd = $timeEnd;
@@ -132,6 +134,16 @@ class activity
         return $seconds;
     }
 
+    public function getYear() {
+        $start_date = new DateTime($this->timeStart);
+        return $start_date->format('Y');
+    }
+
+    public function getMonth() {
+        $start_date = new DateTime($this->timeStart);
+        return $start_date->format('M');
+    }
+
     public function getSeconds()
     {
         return $this->getTime() - $this->getHours() * 3600 - $this->getMinutes() * 60;
@@ -153,6 +165,14 @@ class activity
     public function getTimeStart()
     {
         return $this->timeStart;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
 

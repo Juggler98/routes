@@ -1,3 +1,16 @@
+<?php
+include './class/DBStorage.php';
+include './class/Activity.php';
+
+session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +48,11 @@
     <div class="container">
 
         <div class="row">
-
+            <div id="id"></div>
             <?php
+            $storage = new DBStorage();
+            $activities = $storage->loadAllActivities();
+
 
                 echo '<div class="col">
                     <div class="card mb-4 box-shadow">
@@ -48,10 +64,10 @@
                     . '7.11.2020 21:39' .
                     '<p class="card-text">'
                     . 'Afternoon ride' . '</p>
-                            <div class="stats">' . '
+                            <div class="stats">' .'
 
                                 <div>
-                                    <p>Distance<br />23.45 km</p>
+                                    <p>Distance<br /><span id="distance">25.2 km</span></p>
                                 </div>
 
                                 <div>
@@ -93,6 +109,7 @@
 include 'scripts.html';
 ?>
 </script>
+<script src="js/activityDetails.js"></script>
 
 </body>
 </html>

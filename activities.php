@@ -56,13 +56,13 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <?php
     $storage = new DBStorage();
     $activities = $storage->loadAllActivities();
-
+    $index = 0;
     /** @var Activity $activity */
     foreach ($activities as $activity) {
-    echo '<tr>
+    echo '<tr id="count" class="'. sizeof($activities) .'">
         <td>' . $activity->getType() . '</td>
         <td>' . $activity->getTimeStart() . '</td>
-        <td><a href="activity.php">'. $activity->getTitle() . '</a></td>
+        <td><a href="activity.php" id="' . $activity->getId() . '" class="'. $index++ .'">'. $activity->getTitle() . '</a></td>
         <td>' . $activity->getHours() . ':' . $activity->getMinutes() . ':'
         . $activity->getSeconds() . '</td>
         <td>' . $activity->getDistance() . '</td>
@@ -80,5 +80,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 include 'scripts.html';
 ?>
 </script>
+<script src="js/activityInfo.js"></script>
 </body>
 </html>

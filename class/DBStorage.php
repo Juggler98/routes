@@ -62,7 +62,7 @@ class DBStorage
         $stmt->execute([$_SESSION['id']]);
         $dbActivities = $stmt->fetchAll();
         foreach ($dbActivities as $activity) {
-            $activities[] = new Activity($activity['type_activity'],
+            $activities[] = new Activity($activity['id_activity'], $activity['type_activity'],
                 $activity['time_start'], $activity['time_end'], $activity['public'],
                 $activity['distance'], $activity['ele_gain'], $activity['title_activity']);
         }
@@ -87,7 +87,9 @@ class DBStorage
         $stmt->execute();
         $dbAthletes = $stmt->fetchAll();
         foreach ($dbAthletes as $athlete) {
-            $athletes[] = new Athlete($athlete['id_user'], $athlete['name'], $athlete['lastname']);
+            if ($athlete['name'] != 'admin') {
+                $athletes[] = new Athlete($athlete['id_user'], $athlete['name'], $athlete['lastname']);
+            }
         }
         $stmt = $this->db->prepare('SELECT id_friend FROM following where id_user = ?');
         $stmt->execute([$_SESSION['id']]);
@@ -181,6 +183,19 @@ class DBStorage
             return $stmt->execute([$newPassword, $_SESSION['id']]);
         }
         return false;
+    }
+
+    function deleteUser($id) {
+        $stmt = $this->db->prepare('DELETE FROM following where id_user = ?');
+        $stmt->execute([$id]);
+        $stmt = $this->db->prepare('DELETE FROM following where id_friend = ?');
+        $stmt->execute([$id]);
+        $stmt = $this->db->prepare('DELETE FROM membership where id_user = ?');
+        $stmt->execute([$id]);
+        $stmt = $this->db->prepare('DELETE FROM activity where id_user = ?');
+        $stmt->execute([$id]);
+        $stmt = $this->db->prepare('DELETE FROM user where id_user = ?');
+        $stmt->execute([$id]);
     }
 
 

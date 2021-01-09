@@ -1,3 +1,16 @@
+<?php
+include './class/DBStorage.php';
+include './class/Activity.php';
+
+session_start();
+
+if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
+    header("Location: /tracking/login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +74,41 @@
 
             <?php
 
+            $storage = new DBStorage();
+            $activities = $storage->loadAllActivities();
+
+
+
+
             $months = array("JAN", "FEB", "MAR", "APR", "MAJ", "JUN", "JUL", "AUG", "SEP", "OKT", "NOV", "DEC");
+
+            $distance = array(12);
+            $time = array(12);
+            $count = array(12);
+
+            for ($i = 0; $i < 12; $i++) {
+                $distance[$i] = 0;
+                $time[$i] = 0;
+                $count[$i] = 0;
+            }
+
+            /** @var Activity $activity */
+            foreach ($activities as $activity) {
+                if ($activity->getYear() == $_GET['year']) {
+                    for ($i = 0; $i < sizeof($months); ++$i) {
+                        if (strtolower($months[$i]) == strtolower($activity->getMonth())) {
+                            $distance[$i] += $activity->getDistance();
+                            $time[$i] += $activity->getTime();
+                            $count[$i]++;
+                        }
+                    }
+                }
+            }
+
+            for ($i = 0; $i < 12; $i++) {
+                $time[$i] /= 3600;
+                $time[$i] = floor($time[$i] * 100) / 100;
+            }
 
             for ($i = 0; $i < 12; $i++) {
 
@@ -74,15 +121,16 @@
                             <div class="stats">' . '
 
                                 <div>
-                                    <p style="font-size: inherit">KILOMETERS<br />23</p>
+                                    <p style="font-size: inherit">KILOMETERS<br />'
+                                    . $distance[$i] .'</p>
                                 </div>
 
                                 <div>
-                                    <p>HOURS<br />12</p>
+                                    <p>HOURS<br />'. $time[$i] .'</p>
                                 </div>
 
                                 <div>
-                                    <p>ACTIVITIES<br />5</p>
+                                    <p>ACTIVITIES<br />'. $count[$i] .'</p>
                                 </div>
 
                             </div>
