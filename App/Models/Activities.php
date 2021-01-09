@@ -39,7 +39,8 @@ class Activities extends \App\Core\Model
         //$this->movTime = $this->calculateTime();
     }
 
-    public function loadUser() {
+    public function loadUser()
+    {
 //        $this->user = User::getOne(1);
     }
 

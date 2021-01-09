@@ -23,7 +23,8 @@ class ActivityController extends \App\Core\AControllerBase
 //        return $this->json(Activities::getAll());
 //    }
 
-    public function activity() {
+    public function activity()
+    {
         $activities = Activities::getAll();
         $this->assignUser($activities);
 //        $users = User::getAll();
@@ -46,11 +47,13 @@ class ActivityController extends \App\Core\AControllerBase
 
     }
 
-    public function users() {
+    public function users()
+    {
         return $this->json(User::getAll());
     }
 
-    public function assignUser($activities) {
+    public function assignUser($activities)
+    {
         $users = User::getAll();
         /** @var Activities $activity */
         foreach ($activities as $activity) {

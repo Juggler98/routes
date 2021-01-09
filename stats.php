@@ -1,6 +1,6 @@
 <?php
-include './class/DBStorage.php';
 include './class/Activity.php';
+include './class/DBStorage.php';
 
 session_start();
 
@@ -17,10 +17,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Stats</title>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-            defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,7 +33,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 <script src="js/stats.js"></script>
 
 <?php include 'navbar.html'; ?>
-
 
 <div class="bg-light">
 
@@ -86,55 +81,54 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                             <?php
                             echo $_GET['year'];
                             ?>
-            </i> <a href="/tracking/stats.php/?year=
+                        </i> <a href="/tracking/stats.php/?year=
                         <?php
-            echo $_GET['year'] + 1;
-            ?>
+                        echo $_GET['year'] + 1;
+                        ?>
                         " class="material-icons">
-                navigate_next
-            </a></th>
-            </tr>
-            </thead>
-            <tbody>
+                            navigate_next
+                        </a></th>
+                </tr>
+                </thead>
+                <tbody>
 
-            <?php
+                <?php
 
-            $distance = 0;
-            $time = 0;
-            $elevation = 0;
-            $count = 0;
-            /** @var Activity $activity */
-            foreach ($activities as $activity) {
-                if ($activity->getYear() == $_GET['year']) {
-                    $distance += $activity->getDistance();
-                    $time += $activity->getTime();
-                    $elevation += $activity->getElevation();
-                    $count++;
+                $distance = 0;
+                $time = 0;
+                $elevation = 0;
+                $count = 0;
+                /** @var Activity $activity */
+                foreach ($activities as $activity) {
+                    if ($activity->getYear() == $_GET['year']) {
+                        $distance += $activity->getDistance();
+                        $time += $activity->getTime();
+                        $elevation += $activity->getElevation();
+                        $count++;
+                    }
                 }
-            }
-            $time /= 3600;
-            $time = floor($time * 10) / 10;
+                $time /= 3600;
+                $time = floor($time * 10) / 10;
 
+                ?>
 
-            ?>
-
-            <tr>
-                <td>Distance</td>
-                <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
-            </tr>
-            <tr>
-                <td>Time</td>
-                <?php echo '<td>' . $time . ' h</td>' ?>
-            </tr>
-            <tr>
-                <td>Elev. Gain</td>
-                <?php echo '<td>' . $elevation . ' m</td>' ?>
-            </tr>
-            <tr>
-                <td>Runs</td>
-                <?php echo '<td>' . $count . '</td>' ?>
-            </tr>
-            </tbody>
+                <tr>
+                    <td>Distance</td>
+                    <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <?php echo '<td>' . $time . ' h</td>' ?>
+                </tr>
+                <tr>
+                    <td>Elev. Gain</td>
+                    <?php echo '<td>' . $elevation . ' m</td>' ?>
+                </tr>
+                <tr>
+                    <td>Runs</td>
+                    <?php echo '<td>' . $count . '</td>' ?>
+                </tr>
+                </tbody>
             </table>
         </div>
         <div class="odsadenie">

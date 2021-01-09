@@ -12,7 +12,6 @@ if (isset($_POST['sent'])) {
         header("Location: /tracking/index.php");
         exit();
     }
-
 }
 
 ?>
@@ -23,10 +22,6 @@ if (isset($_POST['sent'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-            defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -51,7 +46,7 @@ if (isset($_POST['sent'])) {
 
 <form class="sign-in" method="post">
     <div class="form-group">
-    <label class="label h2">Log in</label>
+        <label class="label h2">Log in</label>
     </div>
     <div class="form-group">
         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
@@ -63,6 +58,7 @@ if (isset($_POST['sent'])) {
         <button type="submit" value="login" name="sent" class="btn btn-primary">Log in</button>
     </div>
     <p>Don't have an account? <a href="/tracking/register.php">Sign up</a>.</p>
+
     <?php
 
     $storage = new DBStorage();
@@ -79,7 +75,6 @@ if (isset($_POST['sent'])) {
                 </div>';
             }
         }
-
     }
 
     ?>

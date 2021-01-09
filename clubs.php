@@ -19,10 +19,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Clubs</title>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-        defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -36,8 +32,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 </head>
 <body class="bg-light">
 
-
-
 <?php include 'navbar.html'; ?>
 
 <div class="odsadenie">
@@ -47,44 +41,38 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     </div>
 
     <form method="post">
-    <ul class="list-group list-width">
+        <ul class="list-group list-width">
 
-        <?php
+            <?php
 
-        $storage = new DBStorage();
-        $clubs = $storage->loadAllClubs();
+            $storage = new DBStorage();
+            $clubs = $storage->loadAllClubs();
 
-        if (isset($_POST['id'])) {
-            if ($clubs[$_POST['id']-1]->getMembership()) {
-                $storage->leave($_POST['id']);
-            } else {
-                $storage->join($_POST['id']);
-            }
-        }
-
-        $clubs = $storage->loadAllClubs();
-
-        $id = 1;
-        /** @var Club $club */
-        foreach ($clubs as $club) {
-            echo '<li class="list-group-item" style="min-height: 64px">' . $club->getTitle();
-                if ($club->getMembership()) {
-                    echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-danger btn-ath">Leave</button></li>';
+            if (isset($_POST['id'])) {
+                if ($clubs[$_POST['id'] - 1]->getMembership()) {
+                    $storage->leave($_POST['id']);
                 } else {
-                    echo '<button type="submit" value="'.$id.'" name="id" class="btn btn-success btn-ath">Join</button></li>';
+                    $storage->join($_POST['id']);
                 }
-            ++$id;
-        }
+            }
 
+            $clubs = $storage->loadAllClubs();
 
+            /** @var Club $club */
+            foreach ($clubs as $club) {
+                echo '<li class="list-group-item" style="min-height: 64px">' . $club->getTitle();
+                if ($club->getMembership()) {
+                    echo '<button type="submit" value="' . $club->getId() . '" name="id" class="btn btn-danger btn-ath">Leave</button></li>';
+                } else {
+                    echo '<button type="submit" value="' . $club->getId() . '" name="id" class="btn btn-success btn-ath">Join</button></li>';
+                }
+            }
 
+            ?>
 
-        ?>
-    </ul>
+        </ul>
     </form>
 </div>
 
-
 </body>
 </html>
-

@@ -100,7 +100,8 @@ class DBStorage
         return $athletes;
     }
 
-    function loadAllClubs() {
+    function loadAllClubs()
+    {
         $clubs = [];
         $stmt = $this->db->prepare('SELECT * FROM club');
         $stmt->execute();
@@ -185,7 +186,8 @@ class DBStorage
         return false;
     }
 
-    function deleteUser($id) {
+    function deleteUser($id)
+    {
         $stmt = $this->db->prepare('DELETE FROM following where id_user = ?');
         $stmt->execute([$id]);
         $stmt = $this->db->prepare('DELETE FROM following where id_friend = ?');

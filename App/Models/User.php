@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 
@@ -13,7 +14,7 @@ class User extends \App\Core\Model
     {
         $this->id_user = $id;
         $this->name = $name;
-        $this->lastname =$lastname;
+        $this->lastname = $lastname;
     }
 
     static public function setDbColumns()

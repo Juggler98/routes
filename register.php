@@ -10,10 +10,6 @@ include './class/Activity.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Register</title>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-            defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -41,11 +37,11 @@ include './class/Activity.php';
         <label class="label h2">Register</label>
     </div>
     <div class="form-group">
-        <input type="name" class="form-control" id="name" name="name" placeholder="Name" pattern="[^' ']+"
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name" pattern="[^' ']+"
                title="Name can not contain spaces." required>
     </div>
     <div class="form-group">
-        <input type="name" class="form-control" id="surname" name="surname" placeholder="Surname" pattern="[^' ']+"
+        <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" pattern="[^' ']+"
                title="Surname can not contain spaces." required>
     </div>
     <div class="form-group">
@@ -63,6 +59,7 @@ include './class/Activity.php';
         <button type="submit" name="sent" class="btn btn-primary">Register</button>
     </div>
     <p>Have an account? <a href="/tracking/login.php">Sign in</a>.</p>
+
     <?php
 
     $storage = new DBStorage();

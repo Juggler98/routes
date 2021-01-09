@@ -4,8 +4,8 @@ class ActivityDetails {
     }
 
     getActivityDetails() {
-            console.log(sessionStorage.getItem('act'));
-            document.getElementById('id').className = sessionStorage.getItem('act');
+        console.log(sessionStorage.getItem('act'));
+        document.getElementById('id').className = sessionStorage.getItem('act');
     }
 }
 

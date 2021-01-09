@@ -22,10 +22,6 @@ if (isset($_POST['save'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Profile settings</title>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-            defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,6 +35,7 @@ if (isset($_POST['save'])) {
 
 </head>
 <body class="bg-light">
+
 <?php include 'navbar.html'; ?>
 
 <div>
@@ -47,13 +44,14 @@ if (isset($_POST['save'])) {
 
 <div class="profile-settings">
     <form method="post">
+
         <?php
         echo '<div class="form-group">
-          <input type="name" class="form-control" id="name" name="name" value="' . $storage->getCredentials()[0] . '" pattern="[^' . ' ' . ']+"
+          <input type="text" class="form-control" id="name" name="name" value="' . $storage->getCredentials()[0] . '" pattern="[^' . ' ' . ']+"
               placeholder="Name" title="Name can not contain spaces." required>
     </div>
     <div class="form-group">
-        <input type="name" class="form-control" id="surname" name="surname" value="' . $storage->getCredentials()[1] . '" pattern="[^' . ' ' . ']+"
+        <input type="text" class="form-control" id="surname" name="surname" value="' . $storage->getCredentials()[1] . '" pattern="[^' . ' ' . ']+"
               placeholder="Surname" title="Surname can not contain spaces." required>
     </div>
     <div class="form-group">
@@ -64,6 +62,7 @@ if (isset($_POST['save'])) {
     </div>
     </form>'
         ?>
+
         <form method="post">
             <div class="form-group">
                 <input type="password" class="form-control" id="password" name="oldPassword" placeholder="Old Password"
@@ -81,8 +80,8 @@ if (isset($_POST['save'])) {
             <div class="form-group">
                 <button type="submit" name="passwordChanged" class="btn btn-primary">Change password</button>
             </div>
-            <?php
 
+            <?php
 
             if (isset($_POST['save'])) {
                 if ($emailCollision) {

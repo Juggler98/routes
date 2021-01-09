@@ -1,15 +1,10 @@
-
-
 class Activity {
-
-
 
     constructor() {
         this.getActivities();
         //this.getUsers();
         setInterval(() => this.getActivities(), 1000000);
     }
-
 
     async getActivities() {
         try {
@@ -43,19 +38,19 @@ class Activity {
                 var seconds = (new Date(activity.time_end) - new Date(activity.time_start)) / 1000;
                 var speed = Math.floor(activity.distance / (seconds / 3600) * 10) / 10;
                 var hours = Math.floor(seconds / 3600);
-                seconds -= hours*3600;
+                seconds -= hours * 3600;
                 var minutes = Math.floor(seconds / 60);
-                seconds -= minutes*60;
+                seconds -= minutes * 60;
                 html += '<div class="col-md-6 col-lg-4">' +
                     '<div class="card mb-4 box-shadow">' +
                     '<div id="map' + index + '" class="map"></div>' +
                     '<div class="card-body">' +
-                    '<div class="card-text">'  + activity.user.name + ' ' + activity.user.lastname + '</div>' +
+                    '<div class="card-text">' + activity.user.name + ' ' + activity.user.lastname + '</div>' +
                     '<p class="text-muted">' + activity.time_start + '</p>' +
                     '<p class="card-text">' + title + '</p>' +
                     '<div class="stats">' +
                     '<div><p>Distance<br />' + activity.distance + ' km</p></div>' +
-                    '<div><p>Speed<br />'+ speed +' km/h</p></div>' +
+                    '<div><p>Speed<br />' + speed + ' km/h</p></div>' +
                     '<div><p>Time<br />' + hours + ':' + minutes + ':' + seconds + '</p></div>' +
                     '</div>' +
                     '<div class="justify-content-between align-items-center">' +
@@ -76,9 +71,6 @@ class Activity {
         } catch (e) {
             console.error('Error: ' + e.message);
         }
-
-
-
 
 
     }
@@ -118,6 +110,8 @@ class Activity {
 
 }
 
+// new Activity();
+
 document.addEventListener('DOMContentLoaded', () => {
     var activity = new Activity();
 });
@@ -130,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //         //let pom = document.getElementById(i);
 //         //src = pom.className;
 //
-//          src = 'https://drive.google.com/u/0/uc?id=1aP4Q2imMXMSRI76oRvhUq4UgWSRTb1Ua&export=download';
+//         src = 'https://drive.google.com/u/0/uc?id=1aP4Q2imMXMSRI76oRvhUq4UgWSRTb1Ua&export=download';
 //         const ctaLayer = new google.maps.KmlLayer(src, {
 //             map: map,
 //         });

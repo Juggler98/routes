@@ -18,10 +18,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true || $_SESSION['id'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Athletes</title>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-            defer
-    ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -58,12 +54,10 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true || $_SESSION['id'
 
             $athletes = $storage->loadAllAthletes();
 
-            $id = 1;
             /** @var Athlete $athlete */
             foreach ($athletes as $athlete) {
                 echo '<li class="list-group-item" style="min-height: 64px">' . $athlete->getName() . ' ' . $athlete->getSurname();
-                echo '<button type="submit" value="' . $id . '" name="id" class="btn btn-danger btn-ath">Delete</button></li>';
-                ++$id;
+                echo '<button type="submit" value="' . $athlete->getId() . '" name="id" class="btn btn-danger btn-ath">Delete</button></li>';
             }
 
             ?>

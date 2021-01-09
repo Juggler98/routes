@@ -134,12 +134,14 @@ class activity
         return $seconds;
     }
 
-    public function getYear() {
+    public function getYear()
+    {
         $start_date = new DateTime($this->timeStart);
         return $start_date->format('Y');
     }
 
-    public function getMonth() {
+    public function getMonth()
+    {
         $start_date = new DateTime($this->timeStart);
         return $start_date->format('M');
     }

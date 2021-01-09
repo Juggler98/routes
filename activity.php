@@ -18,8 +18,8 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Activity</title>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
-        defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwdnlxB4C-bOkL_HqDe8a52r-E1pb6LdI&callback=initMap"
+            defer
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -44,14 +44,14 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <div class="bg-light">
 
-<div class="album py-5">
-    <div class="container">
+    <div class="album py-5">
+        <div class="container">
 
-        <div class="row">
-            <div id="id"></div>
-            <?php
-            $storage = new DBStorage();
-            $activities = $storage->loadAllActivities();
+            <div class="row">
+                <div id="id"></div>
+                <?php
+                $storage = new DBStorage();
+                $activities = $storage->loadAllActivities();
 
 
                 echo '<div class="col">
@@ -64,7 +64,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                     . '7.11.2020 21:39' .
                     '<p class="card-text">'
                     . 'Afternoon ride' . '</p>
-                            <div class="stats">' .'
+                            <div class="stats">' . '
 
                                 <div>
                                     <p>Distance<br /><span id="distance">25.2 km</span></p>
@@ -90,15 +90,15 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                     </div>
                 </div>';
 
-            ?>
+                ?>
 
+            </div>
         </div>
     </div>
-</div>
 
     <div class="odsadenie">
 
-<div id="map" class="col-8 activitymap odsadenie"></div>
+        <div id="map" class="col-8 activitymap odsadenie"></div>
     </div>
 </div>
 

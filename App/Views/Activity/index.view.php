@@ -1,10 +1,4 @@
-
-
 <?php
-//include './class/DBStorage.php';
-//include './class/Activity.php';
-//include './class/Athlete.php';
-//include './class/Club.php';
 
 session_start();
 
@@ -46,17 +40,15 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <?php include 'navbar.html'; ?>
 
-
 <main role="main" class="bg-light">
 
     <div>
         <h1 class="page-title">Activity feed</h1>
     </div>
-
+    <!--    <div id="map1" class="map"></div>-->
     <div class="album bg-light">
         <div class="container">
             <div class="row" id="activity">
-
 
 
             </div>
@@ -67,8 +59,9 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <script>
     <?php
-    //include 'js/map.js'
+    include 'js/map.js'
     ?>
 </script>
+
 </body>
 </html>

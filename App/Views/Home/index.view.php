@@ -38,7 +38,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
 <script>
     <?php include 'js/map.js';
-//    include 'js/activity.js';
+    //    include 'js/activity.js';
     ?>
 </script>
 
@@ -57,11 +57,11 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
                 <?php
 
-                for ($i = 1; $i < 4; $i++) {
+                for ($i = 1; $i <= 4; $i++) {
 
                     echo '<div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow">
-                        <div id="map' . $i .'" class="map"></div>
+                        <div id="map' . $i . '" class="map"></div>
                         <div class="card-body">
                             <div class="card-text">';
                     echo 'Adam' . '</div>

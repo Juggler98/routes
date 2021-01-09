@@ -25,10 +25,10 @@
     ?>
 </script>
 
-    </div>
-    <div class="web-content">
-        <?= $contentHTML ?>
-    </div>
+</div>
+<div class="web-content">
+    <?= $contentHTML ?>
+</div>
 
-    </body>
+</body>
 </html>
