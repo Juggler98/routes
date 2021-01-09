@@ -103,6 +103,5 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     </div>
 
 </main>
-
 </body>
 </html>

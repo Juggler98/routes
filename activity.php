@@ -99,7 +99,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     <div class="odsadenie">
 
 <div id="map" class="col-8 activitymap odsadenie"></div>
-
     </div>
 </div>
 

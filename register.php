@@ -94,7 +94,6 @@ include './class/Activity.php';
 
     ?>
 </form>
-
 </body>
 </html>
 

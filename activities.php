@@ -72,7 +72,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     ?>
     </tbody>
 </table>
-
 </div>
 
 <script src="js/activityInfo.js"></script>

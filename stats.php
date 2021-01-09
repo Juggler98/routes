@@ -118,7 +118,6 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
             ?>
 
-
             <tr>
                 <td>Distance</td>
                 <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
