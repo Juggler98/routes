@@ -64,7 +64,18 @@ class DBStorage
         foreach ($dbActivities as $activity) {
             $activities[] = new Activity($activity['type_activity'],
                 $activity['time_start'], $activity['time_end'], $activity['public'],
-                $activity['distance'], $activity['ele_gain']);
+                $activity['distance'], $activity['ele_gain'], $activity['title_activity']);
+        }
+        $types = [];
+        $stmt = $this->db->prepare('SELECT * FROM type_activity');
+        $stmt->execute();
+        $dbTypes = $stmt->fetchAll();
+        foreach ($activities as $activity) {
+            foreach ($dbTypes as $type) {
+                if ($type['id_type_activity'] == $activity->getType()) {
+                    $activity->setType($type['type']);
+                }
+            }
         }
         return $activities;
     }

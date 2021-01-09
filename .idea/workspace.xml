@@ -19,20 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Only Update.">
+    <list default="true" id="d3ba1ee6-dba6-4bea-8336-cbcf7f36b78e" name="Default Changelist" comment="Delete unnecessary things and reorganized.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activities.php" beforeDir="false" afterPath="$PROJECT_DIR$/activities.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/activity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activitymap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/activitymap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/athletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/athletes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clubs.php" beforeDir="false" afterPath="$PROJECT_DIR$/clubs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Activity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/DBStorage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats.php" beforeDir="false" afterPath="$PROJECT_DIR$/stats.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +55,12 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="03f44003-382c-4306-b400-41efe7881854" name="localhost" />
+    </servers>
+  </component>
   <component name="ProjectId" id="1j3FfiuLElOTPFSDQ0tfvjBgP4b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -78,14 +78,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\img" />
-      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\css" />
-      <recent name="C:\Users\abeli\PhpstormProjects\Tracking" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abeli\PhpstormProjects\Tracking" />
       <recent name="C:\Users\abeli\PhpstormProjects\Tracking\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FRIčka\5. semester\VAII\php_mysql\www\Tracking\Core\Response" />
+      <recent name="D:\FRIčka\5. semester\VAII\php_mysql\www\Tracking\Core" />
+      <recent name="D:\FRIčka\5. semester\VAII\php_mysql\www\Tracking\js" />
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\img" />
+      <recent name="C:\Users\abeli\PhpstormProjects\Tracking\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -131,7 +133,7 @@
       <workItem from="1609960434991" duration="689000" />
       <workItem from="1610017889258" duration="241000" />
       <workItem from="1610050293166" duration="639000" />
-      <workItem from="1610099419020" duration="1602000" />
+      <workItem from="1610099419020" duration="31125000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1603044663879</created>
@@ -224,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609960623389</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Delete unnecessary things and reorganized.">
+      <created>1610127389103</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610127389103</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +263,8 @@
     <MESSAGE value="Added password confirmation and email check." />
     <MESSAGE value="Change password/email check." />
     <MESSAGE value="Only Update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Only Update." />
+    <MESSAGE value="Delete unnecessary things and reorganized." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary things and reorganized." />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="146" key="#PHP" timestamp="1605024087248">
@@ -266,18 +276,19 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="318" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605378365245" />
-    <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604793424067">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="510" y="274" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610131762108">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
+    <state x="510" y="274" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610131762108" />
     <state x="2574" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1604793424067" />
     <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605888259944">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="531" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888259944" />
-    <state x="2504" y="224" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606074208346">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610127148349">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605381647905" />
+    <state x="456" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610127148349" />
     <state x="2504" y="224" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074208346" />
     <state x="553" y="236" key="FileChooserDialogImpl" timestamp="1605803951181">
       <screen x="0" y="0" width="1450" height="864" />
@@ -288,24 +299,24 @@
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="364" y="194" width="907" height="476" key="MultipleFileMergeDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092552868" />
-    <state x="473" y="155" key="NewPhpClassDialog" timestamp="1605888175775">
+    <state x="473" y="155" key="NewPhpClassDialog" timestamp="1610133389337">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605888175775" />
-    <state x="2683" y="463" key="NewPhpFileDialog" timestamp="1605878850856">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="473" y="155" key="NewPhpClassDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610133389337" />
+    <state x="595" y="370" key="NewPhpFileDialog" timestamp="1610140806696">
+      <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="595" y="370" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605785420225" />
+    <state x="595" y="370" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610140806696" />
     <state x="2683" y="463" key="NewPhpFileDialog/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605878850856" />
     <state x="175" y="62" key="SettingsEditor" timestamp="1603043393640">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="175" y="62" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1603043393640" />
     <state x="2350" y="185" key="SettingsEditor/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1603024990458" />
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1609960630996">
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2" timestamp="1610127392871">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1609960630996" />
+    <state x="318" y="165" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610127392871" />
     <state x="2327" y="206" key="Vcs.Push.Dialog.v2/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1606074281728" />
     <state x="625" y="309" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605378395092">
       <screen x="0" y="0" width="1450" height="864" />
@@ -324,18 +335,18 @@
     </state>
     <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605092019987" />
     <state x="31" y="0" width="1359" height="882" key="dock-window-1/0.0.1450.864/1920.0.1858.1080@1920.0.1858.1080" timestamp="1605014616826" />
-    <state x="435" y="31" width="579" height="801" key="find.popup" timestamp="1605787347397">
+    <state x="435" y="31" width="579" height="801" key="find.popup" timestamp="1610133849929">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="435" y="31" width="579" height="801" key="find.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605787347397" />
+    <state x="435" y="31" width="579" height="801" key="find.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610133849929" />
     <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605089420565">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
     <state x="526" y="334" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605089420565" />
-    <state x="382" y="197" key="run.anything.popup" timestamp="1605874457830">
+    <state x="382" y="197" key="run.anything.popup" timestamp="1610129124999">
       <screen x="0" y="0" width="1450" height="864" />
     </state>
-    <state x="382" y="197" key="run.anything.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1605874457830" />
+    <state x="382" y="197" key="run.anything.popup/0.0.1450.864/1920.0.1858.1080@0.0.1450.864" timestamp="1610129124999" />
     <state x="462" y="188" width="525" height="543" key="search.everywhere.popup" timestamp="1605870131661">
       <screen x="0" y="0" width="1450" height="864" />
     </state>

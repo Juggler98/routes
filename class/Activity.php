@@ -13,7 +13,7 @@ class activity
     private $elevation;
     private $movTime;
 
-    public function __construct($type, $timeStart, $timeEnd, $public, $distance, $elevation)
+    public function __construct($type, $timeStart, $timeEnd, $public, $distance, $elevation, $title)
     {
         $this->type = $type;
         $this->timeStart = $timeStart;
@@ -21,6 +21,7 @@ class activity
         $this->public = $public;
         $this->distance = $distance;
         $this->elevation = $elevation;
+        $this->title = $title == null ? 'Activity' : $title;
     }
 
     /**
@@ -119,8 +120,39 @@ class activity
         return $this->elevation;
     }
 
-    public function getTime() {
-        return 5;
+    public function getTime()
+    {
+        $start_date = new DateTime($this->timeStart);
+        $since_start = $start_date->diff(new DateTime($this->timeEnd));
+        $seconds = $since_start->days * 24 * 60 * 60;
+        $seconds += $since_start->h * 60 * 60;
+        $seconds += $since_start->i * 60;
+        $seconds += $since_start->s;
+
+        return $seconds;
+    }
+
+    public function getSeconds()
+    {
+        return $this->getTime() - $this->getHours() * 3600 - $this->getMinutes() * 60;
+    }
+
+    public function getMinutes()
+    {
+        return floor(($this->getTime() - $this->getHours() * 3600) / 60);
+    }
+
+    public function getHours()
+    {
+        return floor($this->getTime() / 3600);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTimeStart()
+    {
+        return $this->timeStart;
     }
 
 

@@ -61,9 +61,10 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
     foreach ($activities as $activity) {
     echo '<tr>
         <td>' . $activity->getType() . '</td>
-        <td>' . "nieco" . '</td>
-        <td><a href="activity.php">Krásny vrch</a></td>
-        <td>' . $activity->getTime() . '</td>
+        <td>' . $activity->getTimeStart() . '</td>
+        <td><a href="activity.php">'. $activity->getTitle() . '</a></td>
+        <td>' . $activity->getHours() . ':' . $activity->getMinutes() . ':'
+        . $activity->getSeconds() . '</td>
         <td>' . $activity->getDistance() . '</td>
         <td>' . $activity->getElevation() . '</td>
     </tr>'; }

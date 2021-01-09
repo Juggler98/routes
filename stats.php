@@ -21,6 +21,8 @@
 </head>
 <body class="bg-light">
 
+<script src="js/stats.js"></script>
+
 <?php include 'navbar.html'; ?>
 
 
@@ -76,7 +78,7 @@
                 <tbody>
                 <tr>
                     <td>Distance</td>
-                    <td>50 km</td>
+                    <td id="distance">50 km</td>
                 </tr>
                 <tr>
                     <td>Time</td>
