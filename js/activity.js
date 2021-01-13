@@ -3,7 +3,7 @@ class Activity {
     constructor() {
         this.getActivities();
         //this.getUsers();
-        setInterval(() => this.getActivities(), 1000000);
+        setInterval(() => this.getActivities(), 5000);
     }
 
     async getActivities() {
