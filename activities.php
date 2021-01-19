@@ -64,8 +64,8 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                 . $index++ . '">' . $activity->getTitle() . '</a></td>
             <td>' . $activity->getHours() . ':' . $activity->getMinutes() . ':'
                 . $activity->getSeconds() . '</td>
-            <td>' . $activity->getDistance() . '</td>
-            <td>' . $activity->getElevation() . '</td>
+            <td>' . $activity->getDistance() . ' km</td>
+            <td>' . $activity->getElevation() . ' m</td>
             </tr>';
         }
 
