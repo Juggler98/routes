@@ -27,11 +27,13 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
         include 'css/main.css';
         ?>
     </style>
-    <?php include 'navbar.html'; ?>
 </head>
 <body class="bg-light">
+    <?php include 'navbar.html'; ?>
 
-<div class="bg-light">
+
+
+<div>
     <div>
         <h1 class="page-title">My Activities</h1>
     </div>
@@ -55,7 +57,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
         $index = 0;
         /** @var Activity $activity */
         foreach ($activities as $activity) {
-            echo '<tr id="count" class="' . sizeof($activities) . '">
+            echo '<tr class="' . sizeof($activities) . '">
             <td>' . $activity->getType() . '</td>
             <td>' . $activity->getTimeStart() . '</td>
             <td><a href="activity.php" id="' . $activity->getId() . '" class="'

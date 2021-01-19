@@ -37,26 +37,24 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
     <div class="container">
         <div class="row">
-                <h1 class="page-title-calendar float-left"><a href="/tracking/calendar.php/?year=
-                    <?php
-                    if (!isset($_GET['year'])) {
-                        $_GET['year'] = date("Y");
-                    }
-                    echo $_GET['year'] - 1;
-                    ?>
+            <h1 class="page-title-calendar float-left"><a href="/tracking/calendar.php/?year=<?php
+                if (!isset($_GET['year'])) {
+                    $_GET['year'] = date("Y");
+                }
+                echo $_GET['year'] - 1;
+                ?>
                     " class="material-icons">
-                        navigate_before
-                    </a>
-                    <?php
-                    echo $_GET['year'];
-                    ?>
-                    <a href="/tracking/calendar.php/?year=
-                        <?php
-                    echo $_GET['year'] + 1;
-                    ?>
+                    navigate_before
+                </a>
+                <?php
+                echo $_GET['year'];
+                ?>
+                <a href="/tracking/calendar.php/?year=<?php
+                echo $_GET['year'] + 1;
+                ?>
                         " class="material-icons">
-                        navigate_next
-                    </a></h1>
+                    navigate_next
+                </a></h1>
             <div>
                 <h1 class="page-title float-right">Training calendar</h1>
             </div>
@@ -114,15 +112,15 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
                                 <div>
                                     <p style="font-size: inherit">KILOMETERS<br />'
-                                    . $distance[$i] .'</p>
+                    . $distance[$i] . '</p>
                                 </div>
 
                                 <div>
-                                    <p>HOURS<br />'. $time[$i] .'</p>
+                                    <p>HOURS<br />' . $time[$i] . '</p>
                                 </div>
 
                                 <div>
-                                    <p>ACTIVITIES<br />'. $count[$i] .'</p>
+                                    <p>ACTIVITIES<br />' . $count[$i] . '</p>
                                 </div>
 
                             </div>

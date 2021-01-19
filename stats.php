@@ -45,13 +45,13 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
         <div class="page-title">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="btn btn-light active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Run
+                    <input type="radio" name="options" id="option1" checked> Run
                 </label>
                 <label class="btn btn-light">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Bike
+                    <input type="radio" name="options" id="option2"> Bike
                 </label>
                 <label class="btn btn-light">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Hike
+                    <input type="radio" name="options" id="option3"> Hike
                 </label>
             </div>
         </div>
@@ -68,26 +68,26 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
             <table class="table table-striped stats-table">
                 <thead>
                 <tr>
-                    <th scope="col" class="table-title d-flex justify-content-start"><a href="/tracking/stats.php/?year=
-                    <?php
-                        if (!isset($_GET['year'])) {
-                            $_GET['year'] = date("Y");
-                        }
-                        echo $_GET['year'] - 1;
-                        ?>
+                    <th scope="col" class="table-title d-flex justify-content-start"><a
+                                href="/tracking/stats.php/?year=<?php
+                                if (!isset($_GET['year'])) {
+                                    $_GET['year'] = date("Y");
+                                }
+                                echo $_GET['year'] - 1;
+                                ?>
                     " class="material-icons">
                             navigate_before
                         </a> <i>
                             <?php
                             echo $_GET['year'];
                             ?>
-                        </i> <a href="/tracking/stats.php/?year=
-                        <?php
+                        </i> <a href="/tracking/stats.php/?year=<?php
                         echo $_GET['year'] + 1;
                         ?>
                         " class="material-icons">
                             navigate_next
                         </a></th>
+                    <td></td>
                 </tr>
                 </thead>
                 <tbody>
@@ -136,6 +136,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                 <thead>
                 <tr>
                     <th scope="col" class="table-title">All time</th>
+                    <td></td>
                 </tr>
                 </thead>
                 <tbody>
@@ -157,7 +158,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
 
                 <tr>
                     <td>Distance</td>
-                    <?php echo '<td id="distance">' . $distance . 'km</td>' ?>
+                    <?php echo '<td>' . $distance . 'km</td>' ?>
                 </tr>
                 <tr>
                     <td>Time</td>
@@ -169,8 +170,7 @@ if (!isset($_SESSION['logged']) || $_SESSION['logged'] != true) {
                 </tr>
                 <tr>
                     <td>Runs</td>
-                    <?php echo '<td>' . sizeof($activities) . '</td>' ?>
-                </tr>
+                    <?php echo '<td>' . sizeof($activities) . '</td>' ?></tr>
                 </tbody>
             </table>
         </div>
